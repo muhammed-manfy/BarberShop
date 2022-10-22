@@ -1,0 +1,91 @@
+<!-- start slider -->
+<div class="slider">
+  <div class="overlay">
+    <div class="text">
+      <img src="../../../assets/BarberShop/slider/mustache.png" alt="img"/>
+        <h3>Contact Us</h3>
+    </div>
+  </div>
+</div>
+<!-- end slider -->
+
+<!-- start content -->
+<div class="contact">
+  <div class="container">
+     <div class="header text-center">
+       <h5>let's make a contact for your life</h5>
+       <h2> Contact Now </h2>
+       <hr>
+     </div>
+
+        <div class="info" >
+          <div class="row">
+          <div class="col-6 section">
+             <i class="fa fa-phone"><span> {{getPhone}}</span></i>
+             <i class="fa fa-clock-o"><span> {{getTodays}}</span></i>
+          </div>
+          <div class="col-6 section">
+            <i class="fa fa-envelope"><span> {{getEmail}}</span></i>
+            <i class="fa fa-map"><span> {{getAddress}}</span></i>
+        </div>
+        </div>
+    <!-- end row -->
+      </div>
+    <!-- end info -->
+
+    <div class="contact-froma">
+      <form>
+       <div class="row">
+          <div class="col-6">
+            <!-- satrt for first row -->
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="First name"
+              [(ngModel)]="contact.fname" name="fname" #fname="ngModel" required>
+                <div class="alert  alert-danger" *ngIf="fname.invalid && fname.touched">
+                    <span *ngIf="fname.errors?.required"> First name is required</span>
+                </div>
+              <input type="tel" class="form-control" placeholder="Your Phone"
+              [(ngModel)]="contact.phone" name="phone" #phone="ngModel" minlength="9" pattern="[0-9]" required>
+              <div class="alert alert-danger" *ngIf="phone.invalid && phone.touched">
+                    <span *ngIf="phone.errors?.required">The Phone is required</span>
+                    <span *ngIf="phone.errors?.minlength">Enter almost 9 numbers please</span><br>
+                    <span *ngIf="phone.errors?.pattern">Enter Only Numbers Please</span>
+              </div>
+            </div>
+            <!-- end for first row -->
+          </div>
+
+          <div class="col-6">
+            <!-- start for second row -->
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="Last name"
+              [(ngModel)]="contact.lname" name="lname" #lname="ngModel" required>
+              <div class="alert alert-danger" *ngIf="lname.invalid && lname.touched">
+                <span *ngIf="lname.errors?.required"> Last name required </span>
+              </div>
+              <input type="email" class="form-control" placeholder="Your Email" required inputmode="email"
+              [(ngModel)]="contact.email" name="email" #email="ngModel">
+              <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
+                  <span *ngIf="email.errors?.required">Email is required</span>
+              </div>
+            </div>
+          </div>
+          <!-- end for second row -->
+          <div class="col">
+            <div class="form-row">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Give us more Info"></textarea>
+              <button type="submit" [disabled]="fname.valid && lname.valid
+                && email.valid && phone.valid" class="btn btn-light"><i class="fa fa-send"></i>Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+    <!-- maps -->
+    <div class="map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26230.559644193763!2d36.7026809!3d34.7349324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15230fda2335595d%3A0x493eb70d396c37e4!2z2LXYp9mE2YjZhiDYqNix2YrYs9iq2YrYrCDZhNmE2K3ZhNin2YLYqQ!5e0!3m2!1sar!2s!4v1638879246158!5m2!1sar!2s" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  </div>
+<!-- end content -->

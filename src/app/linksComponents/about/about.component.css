@@ -1,0 +1,137 @@
+/* start slider */
+.slider
+{
+  background-image: url('../../../assets/BarberShop/slider/pexels-dmitry-zvolskiy-1805600.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+.slider .overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0,.6);
+}
+
+.slider .text
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 40%;
+}
+
+.slider .text h3
+{
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+/* end slider */
+
+/* start about  header*/
+.about
+{
+  margin-bottom: 100px;
+}
+.about .header
+{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align:center;
+}
+.about .header h5
+{
+  font-weight: 400;
+  font-size: 22px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+.about .header h2
+{
+  color: var(--secondry-color);
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-shadow: 1px 1px 4px;
+}
+.about .header hr
+{
+  border: 2px solid var(--secondry-color);
+  width: 15%;
+  margin-top: 20px;
+}
+.about .header p
+{
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: center;
+}
+.about .icons
+{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(148, 147, 147, 0.6);
+  padding:10px 20px;
+  border-radius: 15px;
+}
+.about .icons li > i
+{
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--secondry-color);
+}
+
+/* end book header */
+
+/* start cards */
+.cards
+{
+  margin-bottom: 100px;
+}
+.cards .row
+{
+  margin-bottom: 50px;
+}
+.cards .content
+{
+  padding-bottom: 40px;
+}
+.cards .card-content
+{
+  background-color:var(--sec-background-color);
+  color: var(--primary-color);
+}
+.cards .card
+{
+  border: 2px solid var(--third-color);
+  box-shadow: 0 0 10px;
+}
+.cards .card img
+{
+  width: 100%;
+}
+.cards .card h5
+{
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.cards .card p
+{
+  line-height: 1.6;
+  padding:10px 15px;
+}
+/* end cards */

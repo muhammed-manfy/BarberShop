@@ -1,0 +1,386 @@
+/* start home */
+.home
+{
+  margin-bottom: 20px;
+  position: relative;
+}
+.home .overlay
+{
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:1;
+}
+.home .image-text
+{
+  background-image: url('../../../assets/BarberShop/slider/pexels-pavel-danilyuk-7518745.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+@media(min-width:420px) and (max-width:992px)
+{
+  .home .image-text
+  {
+    height: 450px;
+  }
+}
+.home .image-text
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.home .image-text .text
+{
+  color: var(--primary-color);
+  z-index: 2;
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  top:30%;
+}
+.home .image-text .text h2
+{
+  font-size: 36px;
+}
+.home .image-text .text h3
+{
+  font-size: 28px;
+}
+.home .image-text .text p
+{
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+@media (max-width:768px) {
+  .home .image-text .text h2
+  {
+    font-size: 30px;
+  }
+  .home .image-text .text h3
+  {
+    font-size: 25px;
+  }
+  .home .image-text .text p
+  {
+      font-size: 16px;
+      line-height: 1.4;
+  }
+}
+
+.home .image-text .text p span
+{
+  font-size: 24px;
+  background-color: var(--sec-background-color);
+  padding: 5px 10px;
+  font-weight:bold;
+}
+
+/* end home */
+
+/* start about */
+
+.about
+{
+  display: flex;
+  margin-bottom: 100px;
+}
+.about .container
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-content
+{
+  width: 50%;
+  padding:0 40px;
+}
+@media (max-width:992px) {
+  .about-content
+  {
+    width: 100%;
+  }
+}
+.about-text h4
+{
+  font-weight: 650;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.about-text h2
+{
+  font-weight: 700;
+  font-size: 36px;
+}
+.about-text h2 span
+{
+  color: brown;
+}
+.about-text p
+{
+  margin-top: 20px;
+  color:var(--sec-background-color);
+  line-height: 1.6;
+  font-size: 18px;
+}
+@media (max-width:768px)
+{
+  .about-text h2
+  {
+    font-size: 25px;
+  }
+  .about-text p
+  {
+    font-size: 16px;
+  }
+}
+@media (min-width:992px) and (max-width:1200px)
+{
+  .about-text h2
+  {
+    font-size: 28px;
+  }
+}
+
+.about .about-content .about-image
+{
+  background-image: url('../../../assets/BarberShop/about/arthur-humeau-pu20JkUx--A-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.about .about-content .about-image .overlay
+{
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  z-index: 1;
+}
+.about .about-content .about-image .text
+{
+  color: var(--primary-color);
+  position: relative;
+  bottom: 90%;
+  z-index: 2;
+  padding: 0px 20px;
+}
+.about .about-content .about-image .text p
+{
+  line-height: 1.7;
+  margin-bottom: 80px;
+}
+@media (min-width:420px) and (max-width:768px)
+{
+  .about .about-content .about-image .text p
+  {
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width:992px) and (max-width:1200px)
+{
+  .about .about-content .about-image .text p
+  {
+    margin-bottom: 40px;
+  }
+}
+.about .about-content .about-image .text a
+{
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--secondry-color);
+  font-weight: 700;
+  font-size: 18px;
+  transition: .5s;
+}
+
+
+.about .about-content .about-image .text a:hover
+{
+  text-decoration: none;
+  padding-left:7px;
+  background-color: var(--sec-background-color);
+}
+.about .image img
+{
+  position: relative;
+  left: 30%;
+  width:100%;
+}
+@media (max-width:992px)
+{
+  .about .image {
+    display: none;
+  }
+}
+@media (min-width:992px) and (max-width:1200px)
+{
+  .about .image img{
+    position: relative;
+    left: 10%;
+    width:100%;
+  }
+}
+
+/* end about */
+
+
+/* start price  */
+.price
+{
+  margin-bottom: 100px;
+}
+.price h5
+{
+  text-transform: uppercase;
+  color:var(--third-color);
+  font-size:20px;
+  font-weight: 400;
+}
+.price h2
+{
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.price .container
+{
+  margin-top: 50px;
+}
+.price .card
+{
+  box-shadow: 0 0 8px;
+  margin-bottom: 40px;
+}
+.price .card .card-header
+{
+  background-color: var(--pri-background-color);
+  color:var(--primary-color);
+  text-transform:capitalize;
+  font-size: 25px;
+  font-weight: 700;
+}
+.price .card .card-title
+{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color:var(--third-color);
+}
+.price .card .card-border
+{
+  border:1px dashed var(--third-color);
+}
+.price .card .card-text
+{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8b8b8b;
+  margin-bottom: 40px;
+}
+.price .card .card-body span
+{
+  background-color: var(--sec-background-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* end price */
+
+/* start barber */
+.barbers
+{
+  background-color:#DDD;
+  padding:50px 0;
+}
+.barbers h5
+{
+  text-transform: uppercase;
+  color:var(--third-color);
+  font-size:22px;
+  font-weight: 400;
+}
+.barbers h2
+{
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.barbers .container
+{
+  margin-top: 50px;
+}
+
+.barbers .card
+{
+  border: solid 1.5px #000;
+  box-shadow: 0 0 7px;
+  margin-bottom: 40px;
+}
+.barbers  .card .card-body
+{
+  padding:5px 20px;
+}
+.barbers .card-img-top
+{
+  border-radius:20px;
+  padding:7px;
+}
+.barbers .card .card-title
+{
+  text-transform: capitalize;
+  color: var(--secondry-color);
+  letter-spacing:-1px;
+  font-weight: 600;
+}
+.barbers .card .card-skill
+{
+  font-weight:400;
+  font-size:18px;
+}
+
+.barbers .card .card-text
+{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8b8b8b;
+  margin-bottom: 40px;
+}
+.barbers .card .card-social
+{
+  margin-top: -20px;
+}
+.barbers .card .card-social ul li
+{
+  display: inline-block;
+  padding: 3px;
+}
+.barbers .card .card-social ul li a > i
+{
+  font-size: 26px;
+  color: var(--secondry-color);
+  transition: .5s;
+}
+.barbers .card .card-social ul li a > i:hover
+{
+  color: var(--sec-background-color);
+  padding-bottom: 10px;
+}
+/* end barber */

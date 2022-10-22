@@ -1,0 +1,178 @@
+<!-- start home  -->
+<div class="home">
+  <div class="image-text">
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>The Barber Shop</h2>
+      <h3>In Syria Homs</h3>
+      <p>With <span>Pristige</span> responsive landing page You can Showcase your next barbershop Websites!</p>
+    </div>
+  </div>
+</div>
+<!-- end home -->
+
+ <!-- start About Section  -->
+ <div class="about">
+   <div class="container">
+   <div class="about-content">
+      <div class="about-text">
+      <h4>About</h4>
+      <h2>Welcome To <span>PristigeSalon</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+
+      <div class="about-image">
+       <div class="overlay"></div>
+        <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <a href="#">Load More</a>
+        </div>
+      </div>
+   </div>
+   <div class="image">
+     <img src="../../../assets/BarberShop/logo/image-about.jpg" alt="img"/>
+   </div>
+  </div>
+</div>
+<!-- end About Section  -->
+
+<!-- start card pricing  -->
+<div class="price text-center">
+    <h5>Our Barber pricing</h5>
+    <h2>Barber Pricing</h2>
+  <div class="container">
+  <div class="row justify-content-center">
+    <!--start first Card -->
+    <div class="col-xl-4 col-md-7" *ngFor="let item of getPrice">
+      <div class="card">
+        <h5 class="card-header">{{item.title}}</h5>
+        <div class="card-body">
+          <h5 class="card-title">{{item.subTitleOne}}</h5>
+          <hr class="card-border"/>
+          <p class="card-text">{{item.text1}}</p>
+          <span>{{item.Price1}}</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{item.subTitleSecond}}</h5>
+          <hr class="card-border"/>
+          <p class="card-text">{{item.text2}}</p>
+          <span>{{item.Price2}}</span>
+        </div>
+      </div>
+    </div>
+    <!-- end first card -->
+    <!-- start second card -->
+    <!-- <div class="col-4">
+      <div class="card">
+        <h5 class="card-header">Face Masking</h5>
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor</h5>
+          <hr class="card-border"/>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <span>$5</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor</h5>
+          <hr class="card-border"/>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <span>$10</span>
+        </div>
+      </div>
+    </div> -->
+    <!-- end second card -->
+
+    <!-- start third card -->
+    <!-- <div class="col-4">
+      <div class="card">
+        <h5 class="card-header">Hair Styling</h5>
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor</h5>
+          <hr class="card-border"/>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <span>$5</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor</h5>
+          <hr class="card-border"/>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <span>$10</span>
+        </div>
+      </div>
+    </div> -->
+    <!-- end third card -->
+   </div>
+  </div>
+</div>
+<!-- end card pricing -->
+
+<!-- start card barbers -->
+<div class="barbers text-center">
+  <h5>Our Barber pricing</h5>
+  <h2>Barber Pricing</h2>
+<div class="container">
+<div class="row justify-content-center">
+  <!--start first Card -->
+  <div class="col-xl-4 col-md-6 col-xs-6" *ngFor="let item of getBarbers">
+    <div class="card">
+      <img src={{item.image}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> {{item.barberName}} </h5>
+        <h6 class="card-skill">{{item.Skill}}</h6>
+        <p class="card-text">{{item.text}}</p>
+        <div class="card-social">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end first card -->
+  <!-- start second card -->
+  <!-- <div class="col-4">
+    <div class="card">
+      <img src="../../../assets/BarberShop/barbers/istockphoto-1179617751-612x612.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bryan Saftler</h5>
+        <h6 class="card-skill">The Barber</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <div class="card-social">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- end second card -->
+
+  <!-- start third card -->
+  <!-- <div class="col-4">
+    <div class="card">
+      <img src="../../../assets/BarberShop/barbers/istockphoto-1277343842-612x612.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Daived Kibber</h5>
+        <h6 class="card-skill">The Barber</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <div class="card-social">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- end third card -->
+ </div>
+</div>
+</div>
+<!-- end card barbers -->

@@ -1,0 +1,157 @@
+<!-- start our barbers  -->
+
+<!-- start slider -->
+<div class="slider">
+  <div class="overlay">
+    <div class="text">
+      <img src="../../../assets/BarberShop/slider/mustache.png" alt="img"/>
+        <h3>our Barbers</h3>
+    </div>
+  </div>
+</div>
+<!-- end slider -->
+
+<!-- start content -->
+<div class="barbers text-center">
+  <div class="container">
+      <div class="header">
+        <h5>MEET OUR BABRER TEAM</h5>
+        <h2>our Barbers</h2>
+        <hr>
+      </div>
+      <!-- start one row  -->
+        <div class="row">
+      <!-- start first card -->
+      <div class="col-lg-4 col-md-6 col-xs-6 content" *ngFor="let item of getBarbers">
+        <div class="card">
+          <img src={{item.image}} class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.barberName}} </h5>
+            <h6 class="card-skill">{{item.Skill}}</h6>
+            <p class="card-text">{{item.text}}</p>
+            <div class="card-social">
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- end first card -->
+
+      <!-- start second card -->
+  <!-- <div class="col-4">
+    <div class="card">
+      <img src="../../../assets/BarberShop/barbers/istockphoto-1245229656-612x612.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bryan Saftler</h5>
+        <h6 class="card-skill">The Barber</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <div class="card-social">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- end second card -->
+  <!-- <div class="col-4">
+    <div class="card">
+      <img src="../../../assets/BarberShop/barbers/istockphoto-1030255748-612x612.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Daived Kibber</h5>
+        <h6 class="card-skill">The Barber</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <div class="card-social">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- end third card -->
+    <!-- </div> -->
+      <!-- end one row -->
+
+       <!-- start second row  -->
+       <!-- <div class="row"> -->
+        <!-- start first card -->
+        <!-- <div class="col-4">
+          <div class="card">
+            <img src="../../../assets/BarberShop/barbers/istockphoto-1271739863-612x612.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Soren Bo Bostin </h5>
+              <h6 class="card-skill">The Barber</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              <div class="card-social">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end first card -->
+
+        <!-- start second card -->
+    <!-- <div class="col-4">
+      <div class="card">
+        <img src="../../../assets/BarberShop/barbers/istockphoto-1277505203-612x612.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bryan Saftler</h5>
+          <h6 class="card-skill">The Barber</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <div class="card-social">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end second card -->
+    <!-- <div class="col-4">
+      <div class="card">
+        <img src="../../../assets/BarberShop/barbers/istockphoto-1278660951-612x612.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Daived Kibber</h5>
+          <h6 class="card-skill">The Barber</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <div class="card-social">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end third card -->
+      <!-- </div> -->
+        <!-- end second row -->
+    <!-- </div> -->
+<!-- </div> -->
+<!-- end content -->
+<!-- end our barbers -->

@@ -1,0 +1,220 @@
+/* start slider */
+.slider
+{
+  background-image: url('../../../assets/BarberShop/slider/pexels-dmitry-zvolskiy-1805600.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+.slider .overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0,.6);
+}
+
+.slider .text
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 40%;
+}
+
+.slider .text h3
+{
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+@media(max-width:768px)
+{
+  .slider .text h3
+  {
+    font-size: 25px;
+  }
+}
+/* end slider */
+/* start services */
+.services
+{
+  margin-bottom: 100px;
+}
+.services .header
+{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align:center;
+}
+.services .header h5
+{
+  font-weight: 400;
+  font-size: 22px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+.services .header h2
+{
+  color: var(--secondry-color);
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-shadow: 1px 1px 4px;
+}
+@media(max-width:992px)
+{
+  .services .header h5
+  {
+    font-size:18px;
+  }
+  .services .header h2
+  {
+    font-size: 25px;
+  }
+  .services .header p
+  {
+    font-size: 16px;
+  }
+}
+.services .header hr
+{
+  border: 2px solid var(--secondry-color);
+  width: 15%;
+  margin-top: 20px;
+}
+.services .header p
+{
+  color:#a8a8a8;
+  line-height: 1.5;
+}
+.services .header .paragraph
+{
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 20px;
+}
+.services .header .paragraph p
+{
+  line-height: 1.5;
+  color: var(--third-color);
+}
+.services .container .row .content
+{
+  padding-top:50px;
+  padding-bottom:20px;
+}
+.services .card
+{
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 280px 250px;
+  box-shadow: 0 0 10px;
+}
+
+@media (min-width:991px) and (max-width:1200px)
+{
+    .services .card
+    {
+      display: grid;
+      grid-template-columns: 200px 250px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)
+{
+    .services .card
+    {
+      display: grid;
+      grid-template-columns: 300px 350px;
+    }
+}
+@media (min-width:576px) and (max-width:768px)
+{
+  .services .card
+  {
+    display: grid;
+    grid-template-columns:200px auto;
+  }
+}
+
+@media (min-width:420px) and (max-width:576px)
+{
+  .services .card
+  {
+    display: grid;
+    grid-template-columns:200px auto;
+  }
+}
+.services .card img
+{
+  border-radius: 15px;
+  width:100%;
+  height: 100%;
+  padding: 5px;
+}
+.services .card .text
+{
+  padding: 20px;
+}
+
+.services .card .text h5
+{
+  font-size: 20px;
+  font-weight:bold;
+  color:  var(--secondry-color);
+}
+.services .card .text p
+{
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+@media (min-width:420px) and (max-width:576px)
+{
+   .services .card .text h5
+  {
+    font-size: 16px;
+  }
+  .services .card .text p
+  {
+    font-size: 14px;
+  }
+}
+@media (min-width:576px) and (max-width:768px)
+{
+
+  .services .card .text h5
+  {
+    font-size: 18px;
+  }
+  .services .card .text p
+  {
+    font-size: 15px;
+  }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+  .services .card .text p
+  {
+    font-size: 16px;
+  }
+}
+@media (min-width:991px) and (max-width:1200px)
+{
+  .services .card .text p
+  {
+    font-size: 16px;
+  }
+}
+/* end services */
+

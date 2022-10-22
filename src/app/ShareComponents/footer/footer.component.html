@@ -1,0 +1,82 @@
+<!-- start testimonels -->
+<div class="testimonels text-center">
+  <div class="overlay"></div>
+    <div class="container-fluid">
+      <h5>leet's See our Testimonles</h5>
+      <h2>Happy Testimonles</h2>
+      <div class="row">
+        <!-- satrt one card -->
+        <div class="col-md-6 box">
+          <img src="../../../assets/BarberShop/testimoniles/testi_01.png" alt=""/>
+          <h5>James Fernadno</h5>
+          <p>- manager of Teams</p>
+          <div class="card-openion">
+              <h5>Aowsome Services!</h5>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          </div>
+        </div>
+      <!-- end one card  -->
+
+      <!-- satrt second carrd -->
+      <div class="col-md-6 box">
+        <img class="img-fluid" src="../../../assets/BarberShop/testimoniles/testi_02.png" alt=""/>
+        <h5>Jaques Philis</h5>
+        <p>-Desginer</p>
+            <div class="card-openion">
+            <h5>Great & Talneted Team!</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            </div>
+        </div>
+         <!-- end second card  -->
+      </div>
+     </div>
+    </div>
+<!-- end testimonels -->
+
+<!-- start footer -->
+<div class="footer">
+  <div class="container">
+    <div class="info col-md-6 col-lg-3 text-sm-center  " >
+      <h3>Site location</h3>
+        <ul class="list-unstyled">
+            <li><i class="fa fa-map"><span> {{getAddress}}</span></i></li>
+            <li><i class="fa fa-phone"><span> {{getPhone}}</span></i></li>
+            <li><i class="fa fa-envelope"><span> {{getEmail}} </span></i></li>
+        </ul>
+    </div>
+    <div class="col-md-6 col-lg-3 links text-sm-center  text-md-left">
+      <h3>Links Info</h3>
+      <ul class="list-styled">
+          <li><a (click)="homeFun()">Home</a></li>
+          <li><a (click)="ourServicesFun()">OurServices</a></li>
+          <li><a (click)="ourBarbersFun()">OurBarbers</a></li>
+          <li><a (click)="contactFun()">Contact</a></li>
+          <li><a (click)="aboutFun()">About</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3 hours text-sm-center">
+        <h3>Hours</h3>
+      <ul class="list-unstyled">
+          <li><p>{{getOpenTime}}</p></li>
+          <li><p>{{getDays}}</p></li>
+          <li><p>{{getClose}}</p></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3 social  text-sm-center text-lg-left">
+      <h3>BarberShop</h3>
+    <ul class="list-unstyled">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+    </ul>
+        <a (click)="myBook()" class="book">Book Now</a>
+  </div>
+</div>
+
+    <div class="copyright">
+      <hr>
+      <p>&copy; 2021 <span>Pristige</span> All Right Reversed</p>
+    </div>
+</div>
+<!-- end footer -->

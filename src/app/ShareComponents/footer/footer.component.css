@@ -1,0 +1,340 @@
+/* start testimonels */
+.testimonels
+{
+  background-image:url('../../../assets/BarberShop/testimoniles/andrea-donato-LCxehckRVCA-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index:1;
+}
+.testimonels .overlay
+{
+  background-color: rgba(0, 0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index:2;
+}
+.testimonels .container-fluid
+{
+  position:relative;
+  z-index:3;
+  padding-top:60px;
+  padding-bottom: 100px;
+}
+.testimonels .container-fluid h5
+{
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+}
+.testimonels .container-fluid h2
+{
+  color:var(--primary-color);
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.testimonels .container-fluid .box
+{
+  margin-top:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonels .container-fluid .box img
+{
+  width: 100px;
+}
+.testimonels .container-fluid .box h5
+{
+  color: var(--primary-color);
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.testimonels .container-fluid .box p
+{
+  color:var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.testimonels .container-fluid  .card-openion
+{
+  width: 60%;
+  background-color: var(--sec-background-color);
+  border: 2px solid #FFF;
+  padding: 10px 20px;
+}
+.testimonels .container-fluid  .card-openion h5
+{
+  font-size: 22px;
+  color:var(--primary-color);
+  font-weight:500;
+}
+.testimonels .container-fluid  .card-openion p
+{
+    line-height: 1.5;
+    text-align: left;
+}
+@media(max-width:992px)
+{
+
+  .testimonels .container-fluid  .card-openion h5
+  {
+      font-size:16px;
+  }
+  .testimonels .container-fluid  .card-openion p
+  {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .testimonels .container-fluid .box h5
+  {
+    font-size: 16px;
+  }
+  .testimonels .container-fluid .box p
+  {
+    font-size: 14px;
+  }
+}
+
+
+/* end  testimonels */
+
+/* start footer */
+.footer
+{
+  margin-top:10px;
+  background-color: var(--pri-background-color);
+  padding: 20px 40px;
+  top: 100%;
+  position: sticky;
+}
+.footer .container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-wdith:500px)
+{
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer .info
+{
+  color: var(--primary-color);
+}
+.footer .info h3
+{
+  font-size: 27px;
+}
+
+.footer .info ul li
+{
+  padding-top: 10px;
+}
+.footer .info ul li span
+{
+  padding: 5px 2px;
+  font-size: 16px;
+}
+
+@media (min-width:991px)
+{
+  .footer .info ul li span
+  {
+    font-size: 14px;
+  }
+  .footer .info ul
+  {
+    text-align: left;
+  }
+}
+@media (min-width:420px) and (max-width:768px)
+{
+ .footer .info ul
+ {
+   text-align: center;
+ }
+ .footer .info ul li span
+ {
+   font-size: 16px;
+ }
+}
+
+@media (min-width:1200px)
+{
+  .footer .info ul li span
+  {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+.footer .links
+{
+  color: var(--primary-color);
+}
+.footer .links h3
+{
+  font-size: 27px;
+}
+.footer .links ul li a
+{
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 450;
+}
+
+@media(max-width:768px)
+{
+  .footer .links ul
+  {
+    list-style-type: none;
+  }
+}
+
+@media(min-width:992px)
+{
+  .footer .links ul li a
+  {
+    font-size: 14px;
+  }
+}
+@media(min-width:1200px)
+{
+  .footer .links ul li a
+  {
+    font-size: 16px;
+  }
+}
+@media(min-width:768px)
+{
+  .footer .links ul li a
+  {
+    margin-left: 10px;
+  }
+  .footer .links ul
+  {
+    list-style-type: none;
+  }
+}
+.footer .links ul li a:hover
+{
+  text-decoration: none;
+  color: var(--sec-background-color);
+}
+.footer .hours
+{
+  color: var(--primary-color);
+}
+.footer .hours h3
+{
+  font-size: 27px;
+}
+
+.footer .hours ul li p
+{
+  padding: -10px 2px;
+  font-size: 16px;
+}
+@media(min-width:992px)
+{
+  .footer .hours ul li p
+  {
+    font-size: 14px;
+  }
+}
+@media(min-width:1200px)
+{
+  .footer .hours ul li p
+  {
+    font-size: 16px;
+
+  }
+}
+.footer .social
+{
+  color: var(--primary-color);
+}
+.footer .social h3
+{
+  font-size: 27px;
+  text-shadow: 0 0 2px;
+
+}
+.footer .social ul li
+{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer .social ul li a > i
+{
+  color: var(--primary-color);
+  padding:5px 2px;
+  font-size: 25px;
+}
+.footer .social ul li a > i:hover
+{
+  color: var(--sec-background-color);
+}
+.footer .social .book
+{
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 20px 40px;
+  color: var(--secondry-color);
+  font-weight: 800;
+  border-radius: 15px;
+}
+.footer .social .book:hover
+{
+  text-decoration: none;
+  color: var(--sec-background-color);
+}
+.footer .copyright hr
+{
+  border: 1px solid var(--primary-color);
+}
+.footer .copyright
+{
+  padding-bottom:5px;
+}
+.footer .copyright p
+{
+  color: var(--primary-color);
+  font-size: 16px;
+  text-align: center;
+}
+.footer .copyright p > span
+{
+  color: var(--sec-background-color);
+  font-size: 22px;
+  font-weight: bold;
+
+}
+@media (min-width:420px)
+{
+  .footer .hours ul li p,
+  .footer .info h3,
+  .footer .links h3,
+  .footer .hours h3,
+  .footer .social
+  {
+    text-align: center;
+  }
+  .footer .links ul li
+  {
+    text-align: center;
+    margin-left:-30px;
+  }
+}
+
+/* end footer */

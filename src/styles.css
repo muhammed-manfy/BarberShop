@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* global rules */
+:root
+{
+  --primary-color:#FFF;
+  --secondry-color:#000;
+  --third-color:#4F4C4C;
+  --pri-background-color:#000;
+  --sec-background-color:#FE4E4E;
+}
+
+
+html,body
+{
+  padding: 0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden;
+}
+
+body
+{
+  background-color:#F6F6F6;
+  font-family:"Roboto";
+}
+
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+     box-sizing: border-box;
+}
+
+
+/* end gloabl rules */
