@@ -40,16 +40,16 @@
             <!-- satrt for first row -->
             <div class="form-row">
               <input type="text" class="form-control" placeholder="First name"
-              [(ngModel)]="contact.fname" name="fname" #fname="ngModel" required>
-                <div class="alert  alert-danger" *ngIf="fname.invalid && fname.touched">
-                    <span *ngIf="fname.errors?.required"> First name is required</span>
+               name="fname" required>
+                <div class="alert  alert-danger">
+                    <span> First name is required</span>
                 </div>
               <input type="tel" class="form-control" placeholder="Your Phone"
-              [(ngModel)]="contact.phone" name="phone" #phone="ngModel" minlength="9" pattern="[0-9]" required>
-              <div class="alert alert-danger" *ngIf="phone.invalid && phone.touched">
-                    <span *ngIf="phone.errors?.required">The Phone is required</span>
-                    <span *ngIf="phone.errors?.minlength">Enter almost 9 numbers please</span><br>
-                    <span *ngIf="phone.errors?.pattern">Enter Only Numbers Please</span>
+               name="phone" minlength="9" pattern="[0-9]" required>
+              <div class="alert alert-danger">
+                    <span>The Phone is required</span>
+                    <span>Enter almost 9 numbers please</span><br>
+                    <span>Enter Only Numbers Please</span>
               </div>
             </div>
             <!-- end for first row -->
@@ -59,14 +59,14 @@
             <!-- start for second row -->
             <div class="form-row">
               <input type="text" class="form-control" placeholder="Last name"
-              [(ngModel)]="contact.lname" name="lname" #lname="ngModel" required>
-              <div class="alert alert-danger" *ngIf="lname.invalid && lname.touched">
-                <span *ngIf="lname.errors?.required"> Last name required </span>
+               name="lname" required>
+              <div class="alert alert-danger">
+                <span> Last name required </span>
               </div>
               <input type="email" class="form-control" placeholder="Your Email" required inputmode="email"
-              [(ngModel)]="contact.email" name="email" #email="ngModel">
-              <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
-                  <span *ngIf="email.errors?.required">Email is required</span>
+              name="email">
+              <div class="alert alert-danger">
+                  <span>Email is required</span>
               </div>
             </div>
           </div>
@@ -75,8 +75,7 @@
             <div class="form-row">
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
               placeholder="Give us more Info"></textarea>
-              <button type="submit" [disabled]="fname.valid && lname.valid
-                && email.valid && phone.valid" class="btn btn-light"><i class="fa fa-send"></i>Submit</button>
+              <button type="submit" class="btn btn-light"><i class="fa fa-send"></i>Submit</button>
             </div>
           </div>
         </div>

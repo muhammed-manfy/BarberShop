@@ -14,7 +14,6 @@ import { OurBarbersComponent } from './linksComponents/our-barbers/our-barbers.c
 import { BookComponent } from './linksComponents/book/book.component';
 import { ContactComponent } from './linksComponents/contact/contact.component';
 import { AboutComponent } from './linksComponents/about/about.component';
-import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,6 @@ import { TestComponent } from './test/test.component';
     BookComponent,
     ContactComponent,
     AboutComponent,
-    TestComponent
   ],
   imports: [
     BrowserModule,

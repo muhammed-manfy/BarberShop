@@ -28,37 +28,36 @@
             <form  autocomplete="off">
               <div class="form-row align-items-center">
                 <input type="text" id="firstName" name="fname" required
-                class="form-control forms" placeholder="Enter first name"
-               [(ngModel)]="Book.firstName" #fname="ngModel">
-               <div class="alert alert-danger" *ngIf="fname.invalid && fname.touched">
-                    <span *ngIf="fname.errors?.required">First name is required</span>
+                class="form-control forms" placeholder="Enter first name">
+               <div class="alert alert-danger">
+                    <span>First name is required</span>
                </div>
 
                 <input type="text" id="lastName" name="lname"
                  class="form-control forms" placeholder="Enter last name"
-                [(ngModel)]="Book.lastName" #lname="ngModel" required>
-                <div class="alert alert-danger" *ngIf="lname.invalid && lname.touched">
-                  <span *ngIf="lname.errors?.required">Last name is required</span>
+                 required>
+                <div class="alert alert-danger">
+                  <span >Last name is required</span>
                 </div>
 
                 <input type="email" id="email" name="email"
                  class="form-control forms" placeholder="Enter your Email"
-                 [(ngModel)]="Book.email" #email="ngModel" required>
+                  required>
 
-                 <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
-                  <span *ngIf="email.errors?.required">Email is required</span>
+                 <div class="alert alert-danger">
+                  <span>Email is required</span>
                  </div>
 
                  <input type="tel" id="phone" name="phone"
                 class="form-control forms" placeholder="Enter your phone"
-                [(ngModel)]="Book.phone" #phone="ngModel" minlength="9" required>
+                 minlength="9" required>
 
-                <div class="alert alert-danger" *ngIf="phone.invalid && phone.touched">
-                  <span *ngIf="phone.errors?.required">Phone is required</span>
-                  <span *ngIf="phone.errors?.minlength">Please, Enter 9 Numbers</span>
+                <div class="alert alert-danger">
+                  <span>Phone is required</span>
+                  <span>Please, Enter 9 Numbers</span>
                  </div>
 
-                <select  class="form-control formsSelect" name="option" [(ngModel)]="Book.option" #option="ngModel" required>
+                <select  class="form-control formsSelect" name="option" required>
                   <option value="0" Selected>Choose Day and Time</option>
                   <option value="1">Tues-Fri 9:00am - 6:00pm</option>
                   <option value="2">Sat 9:00am - 3:00pm</option>
@@ -66,13 +65,11 @@
                   <option value="4">Other time...</option>
                 </select>
 
-                <div class="alert alert-danger" *ngIf="option.invalid && option.touched">
-                  <span *ngIf="option.errors?.required">Date and Time  is required</span>
+                <div class="alert alert-danger"><span>Date and Time  is required</span>
                  </div>
                 <textarea  id="message" rows="3" cols="7"
                  class="form-control forms" placeholder="Give us Your Message."></textarea>
-                <button type="submit" [disabled]="!fname.valid && !lname.valid &&
-                !email.valid && !phone.valid && !option.valid"><i class="fa fa-user"> Get Reverse</i></button>
+                <button type="submit"><i class="fa fa-user"> Get Reverse</i></button>
               </div>
             </form>
             <!-- end form contnet -->
