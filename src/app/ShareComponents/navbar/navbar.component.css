@@ -19,7 +19,7 @@
 .upperBar .info span {
   font-weight: 500;
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Poppins";
 }
 
@@ -35,15 +35,13 @@
     flex-direction: column;
     justify-content: start;
   }
-
-  .upperBar .info span {
-    font-size: 22px;
+}
+@media screen and (max-width:1200px) {
+  .upperBar .info span{
+    font-size: 14px;
   }
 }
 
-.upperBar .social {
-  margin: auto;
-}
 
 .upperBar .social ul {
   display: flex;
@@ -55,10 +53,6 @@
   .upperBar .social ul {
     justify-content: center;
   }
-
-  .upperBar .info span {
-    font-size: 16px;
-  }
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -66,9 +60,6 @@
     justify-content: center;
   }
 
-  .upperBar .info span {
-    font-size: 16px;
-  }
 }
 
 .upperBar .social ul li a {

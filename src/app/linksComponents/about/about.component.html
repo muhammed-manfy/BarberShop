@@ -3,8 +3,8 @@
 <div class="slider">
   <div class="overlay">
     <div class="text">
-      <img src="../../../assets/BarberShop/slider/mustache.png" alt="img"/>
-        <h3>About us</h3>
+      <img src="../../../assets/BarberShop/slider/mustache.png" alt="img" />
+      <h3>About us</h3>
     </div>
   </div>
 </div>
@@ -13,82 +13,41 @@
 <!-- start content -->
 <div class="about">
   <div class="container">
-          <div class="header">
-            <h2>our Mission</h2>
-            <hr>
-            <p>{{getOurMission}}</p>
-          </div>
-          <div class="header">
-            <h2>why us?</h2>
-            <hr>
-            <p>{{getWhyUs}}</p>
-          </div>
-          <div class="header">
-            <h2>about us</h2>
-            <hr>
-            <p>PP{{getAboutUs}}</p>
-            <ul class="list-unstyled icons">
-              <li *ngFor="let item of getIconsAndText"><i class="fa fa-check-circle"> {{item.text}}</i></li>
-            </ul>
-          </div>
+    <div class="header">
+      <h2>our Mission</h2>
+      <hr>
+      <p>{{getOurMission}}</p>
+    </div>
+    <div class="header">
+      <h2>why us?</h2>
+      <hr>
+      <p>{{getWhyUs}}</p>
+    </div>
+    <div class="header">
+      <h2>about us</h2>
+      <hr>
+      <p>PP{{getAboutUs}}</p>
+      <ul class="list-unstyled icons">
+        <li *ngFor="let item of getIconsAndText"><i class="fa fa-check-circle"> {{item.text}}</i></li>
+      </ul>
+    </div>
   </div>
-  </div>
-     <!-- end content -->
-     <!-- end about -->
-
-  <!-- start cards -->
-      <div class="cards">
-        <div class="container">
-          <div class="row">
-            <!-- start one column -->
-            <div class="col-6 content" *ngFor="let item of getAboutBarbers">
-                <div class="card">
-                  <img src={{item.image}} alt=""/>
-                    <div class="card-content">
-                      <h5>{{item.title}}</h5>
-                      <p>{{item.text}}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end one column -->
-            <!-- start second column -->
-            <!-- <div class="col-6">
-              <div class="card">
-                <img src="../../../assets/BarberShop/barbers/istockphoto-1206241162-612x612.jpg" alt=""/>
-                  <div class="card-content">
-                    <h5>The Barber materials</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean commodo ligula eget dolor</p>
-                  </div>
-              </div>
-          </div> -->
-          <!-- end second column -->
+</div>
+<!-- start cards -->
+<div class="cards">
+  <div class="container">
+    <div class="row">
+      <!-- start one column -->
+      <div class="col-xs-12 col-md-6 content" *ngFor="let item of getAboutBarbers">
+        <div class="card">
+          <img src={{item.image}} alt="BarberPicture" />
+          <div class="card-content">
+            <h5>{{item.title}}</h5>
+            <p>{{item.text}}</p>
           </div>
-
-          <!-- <div class="row"> -->
-            <!-- start one column -->
-            <!-- <div class="col-6">
-                <div class="card">
-                  <img src="../../../assets/BarberShop/barbers/istockphoto-1271739863-612x612.jpg" alt=""/>
-                    <div class="card-content">
-                      <h5>OutStanding Barber Shop</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean commodo ligula eget dolor.</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- end one column -->
-            <!-- start second column -->
-            <!-- <div class="col-6">
-              <div class="card">
-                <img src="../../../assets/BarberShop/barbers/istockphoto-1245229656-612x612.jpg" alt=""/>
-                  <div class="card-content">
-                    <h5>The Barber materials</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean commodo ligula eget dolor.</p>
-                  </div>
-              </div>
-          </div> -->
-          <!-- end second column -->
-          <!-- </div> -->
-
         </div>
       </div>
+      <!-- end one column -->
+    </div>
+  </div>
   <!-- end cards -->

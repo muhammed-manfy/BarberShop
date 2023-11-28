@@ -28,6 +28,7 @@
 
 .slider .text h3
 {
+  font-family: "Poppins";
   margin-top: 10px;
   color: var(--primary-color);
   font-size: 32px;
@@ -54,6 +55,7 @@
 }
 .books .header h5
 {
+  font-family: "Poppins";
   font-weight: 400;
   font-size: 22px;
   color: #a0a0a0;
@@ -61,6 +63,7 @@
 }
 .books .header h2
 {
+  font-family: "Poppins";
   color: var(--secondry-color);
   font-weight: bold;
   font-size: 36px;
@@ -134,6 +137,7 @@
 }
 .books .form-reverse button
 {
+  font-family: "Poppins";
   background-color: var(--sec-background-color);
   color: var(--primary-color);
   font-size: 18px;
@@ -144,6 +148,7 @@
 }
 .books .form-reverse a:hover
 {
+  font-family: "Poppins";
   border: 1px solid var(--sec-background-color);
 }
 @media (max-width:768px)
@@ -181,6 +186,7 @@
 }
 .books .info h4
 {
+  font-family: "Poppins";
   text-transform: capitalize;
   font-weight: bold;
   font-size: 27px;
@@ -222,6 +228,7 @@
 }
 .books .social ul div a
 {
+  font-family: "Poppins";
   line-height: 1.2;
   color: var(--secondry-color);
   font-size: 18px;
